@@ -1,0 +1,40 @@
+@charset "UTF-8";
+%out {
+  font-size: 0px;
+  letter-spacing: -5px;
+}
+
+%in {
+  @extend %inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+}
+
+@mixin in ($child:true) {
+  @extend %in;
+  @if $child {
+    font-size: 12px;
+  }
+}
+
+.in {
+  @extend %in;
+}
+.out {
+  @extend %out;
+}
+
+%icon {
+  @extend %inline-block;
+  vertical-align: middle;
+  background: url(../images/icon.png) no-repeat 0 0;
+}
+
+@mixin text-overflow(){
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+

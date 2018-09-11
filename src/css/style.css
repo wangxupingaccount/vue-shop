@@ -1,0 +1,532 @@
+@charset "UTF-8";
+.H1 { height: .1rem; }
+
+.H2 { height: .2rem; }
+
+.H3 { height: .3rem; }
+
+.H2-bg { height: .2rem; background: #f6f6f6; }
+
+.color1 { color: red; }
+
+.color2 { color: #02a3eb; }
+
+.color3 { color: #999; }
+
+.color4 { color: #ff9d12; }
+
+.red { color: red; }
+
+.TR { text-align: right !important; }
+
+.TL { text-align: left !important; }
+
+.FL { float: left; }
+
+.FR { float: right; }
+
+.clear { clear: both; height: 0px; line-height: 0; margin: 0; padding: 0; _height: 0px; }
+
+img { max-width: 100%; }
+
+.line_through { text-decoration: line-through; }
+
+.in, .header .head .head-info span, .header .head .head-info em, .header .head .head-info a, .header .menu li, .danfan-box ul li, .product-list ul li, .product-info .info-prop .propName, .product-info .info-prop .newPrice, .product-info .info-prop .oldPrice, .product-info .info-prop .propNumber, .news-list li .time, .news-list li .info, .cart-table td .deta-number .deta-number-click, .cart-table td .deta-number .deta-number-input, .order-detail-title label, .order-detail-title .text, .order-detail-table td .deta-number .deta-number-click, .order-detail-table td .deta-number .deta-number-input, .order-delivery-address .address-item, .order-delivery-address .address-add-btn, .buy-now-total p span, .buy-now-total p em, .address-group label, .address-group .item, .delivery-mode-group .name, .delivery-mode-group .text, .delivery-mode-group .cost, .addSuccess-left, .addSuccess-center, .addSuccess-right, .addSuccess-right .tip span, .addSuccess-right .tip em, .form-label, .form-item, .footer .foot .foot-info .menu, .footer .foot .foot-info .menu ul li, .footer .foot .foot-info .phone { display: inline-block; *display: inline; *zoom: 1; }
+
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. 0. sassCore's style */
+html { font-family: 'Microsoft YaHei','STXihei', sans-serif,Verdana; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ overflow-y: scroll; /* 0 */ -webkit-overflow-scrolling: touch; /* 0 */ font-size: 312.5%; /* 0 */ }
+
+/** 1. Remove default margin 0. sassCore's style. */
+body { margin: 0; /* 1 */ font-size: 0.32rem; /* 0 */ line-height: 1.5; /* 0 */ color: #333; /* 0 */ background-color: #fff; /* 0 */ min-width: 280px; }
+
+/* HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+/** 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. 3. Correct `inline-block` display in IE 6/7. */
+audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ *display: inline; /* 3 */ *zoom: 1; /* 3 */ }
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
+[hidden], template { display: none; }
+
+/* Links ========================================================================== */
+/** 1. Remove the gray background color from active links in IE 10. 2. Improve readability when focused and also mouse hovered in all browsers. 0. sassCore's style. */
+a { background: transparent; /* 1 */ /* 0 */ text-decoration: none; color: #333; }
+a:active, a:hover { outline: 0; /* 2 */ }
+a:hover { color: #1a1a1a; }
+
+/* Text-level semantics ========================================================================== */
+/** Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari and Chrome. */
+dfn { font-style: italic; }
+
+/** Address styling not present in IE 8/9. */
+mark { background: #ff0; color: #000; }
+
+/** Address inconsistent and variable font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/* Embedded content ========================================================================== */
+/** 1. Remove border when inside `a` element in IE 8/9/10. 2. Improve image quality when scaled in IE 7. 0. sassCore's style. */
+img { border: 0; /* 1 */ vertical-align: middle; /* 0 */ -ms-interpolation-mode: bicubic; /* 2 */ }
+
+em, i { font-style: normal; }
+
+/** Correct overflow not hidden in IE 9/10/11. */
+svg:not(:root) { overflow: hidden; }
+
+/* Grouping content ========================================================================== */
+/** Address differences between Firefox and other browsers. */
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+
+/** 1. Contain overflow in all browsers. 2. Improve readability of pre-formatted text in all browsers. */
+pre { overflow: auto; /* 1 */ white-space: pre; /* 2 */ white-space: pre-wrap; /* 2 */ word-wrap: break-word; /* 2 */ }
+
+/** 1. Address odd `em`-unit font size rendering in all browsers. 2. Correct font family set oddly in IE 6, Safari 4/5, and Chrome. */
+code, kbd, pre, samp { font-family: monospace, monospace; /* 1 */ _font-family: 'courier new', monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Forms ========================================================================== */
+/** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
+/** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+button, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address `overflow` set to `hidden` in IE 8/9/10/11. */
+button { overflow: visible; }
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera. Correct `select` style inheritance in Firefox. */
+button, select { text-transform: none; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. 4. Remove inner spacing in IE 7 without affecting normal text inputs. Known issue: inner spacing remains in IE 6. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ *overflow: visible; /* 4 */ }
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+input { line-height: normal; }
+
+/** It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width.  1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. 3. Remove excess padding in IE 7. Known issue: excess padding remains in IE 6. */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ *height: 13px; /* 3 */ *width: 13px; /* 3 */ }
+
+/** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof). */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
+
+/** Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9/10/11. 2. Remove padding so people aren't caught out if they zero out fieldsets. 3. Correct alignment displayed oddly in IE 6/7. */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ *margin-left: -7px; /* 3 */ }
+
+/** 1. Remove default vertical scrollbar in IE 8/9/10/11. 0. sassCore's style */
+textarea { overflow: auto; /* 1 */ resize: vertical; /* 0 */ }
+
+/** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup { font-weight: bold; }
+
+/* Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+/** Address CSS quotes not supported in IE 6/7. */
+q { quotes: none; }
+
+html, button, input, select, textarea { font-family: "Microsoft YaHei", "STXihei", Helvetica, Tahoma, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote { margin: 0; }
+
+ul, ol, li, dl, dd { margin: 0; padding: 0; }
+
+ul, ol { list-style: none outside none; }
+
+h1, h2, h3 { line-height: 2; font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6, hr, dt, dd, dl { font-size: 12px; margin: 0; padding: 0; font-weight: normal; }
+
+em, i { font-style: normal; }
+
+input:-moz-placeholder, textarea:-moz-placeholder { color: #ccc; }
+
+input::-moz-placeholder, textarea::-moz-placeholder { color: #ccc; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #ccc; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #ccc; }
+
+input.placeholder, textarea.placeholder { color: #ccc; }
+
+.out, .header .head .head-info, .header .menu, .danfan-box ul, .product-list ul, .product-info .info-prop, .news-list li, .cart-table td .deta-number, .order-detail-title, .order-detail-table td .deta-number, .order-delivery-address, .buy-now-total p, .address-group, .delivery-mode-group, .addSuccess-box, .addSuccess-right .tip, .form-group, .footer .foot .foot-info, .footer .foot .foot-info .menu ul { font-size: 0px; letter-spacing: -5px; }
+
+.in, .header .head .head-info span, .header .head .head-info em, .header .head .head-info a, .header .menu li, .danfan-box ul li, .product-list ul li, .product-info .info-prop .propName, .product-info .info-prop .newPrice, .product-info .info-prop .oldPrice, .product-info .info-prop .propNumber, .news-list li .time, .news-list li .info, .cart-table td .deta-number .deta-number-click, .cart-table td .deta-number .deta-number-input, .order-detail-title label, .order-detail-title .text, .order-detail-table td .deta-number .deta-number-click, .order-detail-table td .deta-number .deta-number-input, .order-delivery-address .address-item, .order-delivery-address .address-add-btn, .buy-now-total p span, .buy-now-total p em, .address-group label, .address-group .item, .delivery-mode-group .name, .delivery-mode-group .text, .delivery-mode-group .cost, .addSuccess-left, .addSuccess-center, .addSuccess-right, .addSuccess-right .tip span, .addSuccess-right .tip em, .form-label, .form-item, .footer .foot .foot-info .menu, .footer .foot .foot-info .menu ul li, .footer .foot .foot-info .phone { vertical-align: top; letter-spacing: normal; }
+
+body { min-width: 1200px; }
+
+.hide { display: none; }
+
+.container { width: 1200px; margin: 0 auto; }
+
+.header { width: 100%; }
+.header .head { height: 100px; }
+.header .head .logo { color: #e4393c; font-size: 32px; line-height: 100px; font-weight: bold; float: left; }
+.header .head .head-info { float: right; line-height: 100px; }
+.header .head .head-info span, .header .head .head-info em, .header .head .head-info a { font-size: 14px; color: #999999; }
+.header .head .head-info em { padding: 0 10px; }
+.header .head .head-info a:hover { color: #f13a3a; }
+.header .menu { background: #2b2b2b; }
+.header .menu li { font-size: 16px; height: 50px; line-height: 50px; text-align: center; width: 140px; margin-right: 30px; }
+.header .menu li a { color: #fff; display: block; }
+.header .menu li.active a { background: #F01E1E; }
+.header .menu li .btn { background: #666; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; padding: 0 10px; height: 24px; line-height: 24px; border: none; color: #fff; margin-left: 20px; }
+
+/**
+* 首页
+*/
+.danfan-box { padding-top: 80px; }
+.danfan-box ul { width: 1232px; }
+.danfan-box ul li { height: 245px; width: 374px; margin-right: 32px; position: relative; }
+.danfan-box ul li img { position: relative; z-index: 1; }
+.danfan-box ul li .shad { position: absolute; top: 0; left: 0; height: 245px; width: 374px; background: url("http://qianduan88.com/uploadfile/vuexImages/danfanBg.png") no-repeat center center; z-index: 10; }
+.danfan-box ul li .shad .list { text-align: center; width: 123px; height: 123px; margin: 0 auto; margin-top: 61px; }
+.danfan-box ul li .shad .list p { width: 88px; margin: 0 auto; padding-top: 20px; font-size: 30px; color: #fff; height: 38px; line-height: 38px; letter-spacing: 1.5px; cursor: pointer; }
+
+.index-banner { height: 600px; position: relative; min-width: 1200px; }
+.index-banner .item { height: 600px; width: 100%; position: absolute; top: 0; left: 0; }
+.index-banner .item.index1 { z-index: 10; }
+.index-banner .item.index2 { z-index: 30; }
+.index-banner .item .box { position: relative; height: 600px; }
+.index-banner .item .box .img { position: absolute; top: 0; left: 0; z-index: 0; height: 100%; }
+.index-banner .item .box .text { position: relative; width: 100%; z-index: 10; top: 0; padding-top: 200px; }
+.index-banner .item .box .text h1 { color: #fc619f; font-size: 45px; height: 60px; line-height: 60px; font-weight: bold; margin-bottom: 10px; }
+.index-banner .item .box .text h2 { color: #a154b2; font-size: 20px; height: 40px; line-height: 40px; }
+.index-banner .item .box .text h3 { color: #f5a182; font-size: 50px; height: 80px; line-height: 80px; margin-bottom: 20px; }
+.index-banner .item .box .text .btn { height: 62px; }
+.index-banner .item .box .text .btn span { display: inline-block; width: 196px; background: #ff999c; color: #fff; font-size: 24px; line-height: 62px; text-align: center; }
+
+.hot-sale-product { padding: 30px 0; }
+.hot-sale-product .item { padding: 0 112px; height: 265px; margin-top: 80px; }
+.hot-sale-product .hot-sale-left { width: 372px; }
+.hot-sale-product .hot-sale-left .title { padding: 15px 0; }
+.hot-sale-product .hot-sale-left .title h1 { font-size: 22px; color: #666; }
+.hot-sale-product .hot-sale-left .title h2 { font-size: 14px; color: #999; }
+.hot-sale-product .hot-sale-left.left { float: left; }
+.hot-sale-product .hot-sale-left.right { float: right; }
+.hot-sale-product .hot-sale-left .info { border-top: #dedede solid 1px; padding: 20px 0; }
+.hot-sale-product .hot-sale-left .info p { font-size: 14px; color: #999; line-height: 25px; }
+.hot-sale-product .hot-sale-left .price { padding: 20px 0; height: 48px; line-height: 48px; }
+.hot-sale-product .hot-sale-left .price span { font-size: 30px; color: #e4393c; }
+.hot-sale-product .hot-sale-left .price em { font-size: 16px; color: #fff; display: block; float: right; border-radius: 6px; background: #e4393c; width: 138px; text-align: center; cursor: pointer; }
+.hot-sale-product .hot-sale-right { width: 372px; padding-top: 20px; }
+.hot-sale-product .hot-sale-right.left { float: left; }
+.hot-sale-product .hot-sale-right.right { float: right; }
+
+/**
+* 首页
+*/
+.page-box { width: 1200px; margin: 0 auto; }
+.page-title { padding: 40px 0; text-align: center; }
+.page-title h1 { color: #e4393c; font-size: 30px; height: 44px; line-height: 44px; }
+.page-title h2 { color: #999; font-size: 16px; }
+
+/**
+* 热销产品
+*/
+.product-list { margin-bottom: 20px; }
+.product-list ul { width: 1214px; }
+.product-list ul li { width: 281px; margin: 10px; height: 360px; margin-bottom: 10px; border: 1px solid #ededed; }
+.product-list ul li .img { width: 231px; height: 231px; padding: 20px 25px; }
+.product-list ul li .img img { width: 100%; height: 100%; }
+.product-list ul li p.text { height: 46px; line-height: 23px; text-align: left; font-size: 14px; margin-bottom: 6px; padding: 0 20px; }
+.product-list ul li p.text a { color: #666; }
+.product-list ul li p.text a:hover { color: #e43a3d; }
+.product-list ul li p.btn { height: 30px; line-height: 30px; color: #666; font-size: 14px; padding: 0 20px; }
+.product-list ul li p.btn span { display: block; float: left; }
+.product-list ul li p.btn span.market_price { color: #e4393c; margin-right: 6px; }
+.product-list ul li p.btn span.shop_price { text-decoration: line-through; color: #999; font-size: 12px; }
+.product-list ul li p.btn span.sales_sum { color: #999; font-size: 12px; float: right; }
+.product-list ul li p.btn .addBtn { float: right; border: none; background: #b30000; height: 30px; line-height: 28px; text-align: center; width: 88px; border-radius: 6px; font-size: 14px; font-size: 12px; color: #fff; }
+.product-list ul li:hover { border: 1px solid #e4393c; }
+
+.product-banner { background: url("http://qianduan88.com/uploadfile/vuexImages/productBanner.jpg") no-repeat; background-size: cover; height: 390px; min-width: 1200px; }
+.product-banner2 { background: url("http://qianduan88.com/uploadfile/vuexImages/productBanner2.jpg") no-repeat; background-size: cover; height: 218px; width: 1200px; margin: 0 auto; }
+
+/**
+* 热销产品
+*/
+/**
+* 热销产品详情
+*/
+.product-detail-info { width: 1200px; margin: 0 auto; }
+.product-carousel { width: 586px; height: 475px; float: left; }
+.product-carousel .small-carousel { width: 70px; height: 475px; float: left; }
+.product-carousel .small-carousel li { width: 70px; margin-bottom: 18px; }
+.product-carousel .small-carousel li span { border: #d1d1d1 solid 1px; width: 66px; height: 66px; display: block; }
+.product-carousel .small-carousel li img { width: 66px; height: 66px; }
+.product-carousel .large-carousel { width: 470px; height: 470px; float: right; border: #d1d1d1 solid 1px; }
+.product-carousel .large-carousel img { width: 470px; height: 470px; }
+.product-info { width: 530px; height: 475px; float: right; }
+.product-info .info-title { font-weight: normal; color: #585858; margin: 0; font-size: 20px; text-align: left; word-break: break-word; height: 56px; line-height: 28px; margin-bottom: 12px; }
+.product-info .info-prop { height: 80px; line-height: 80px; }
+.product-info .info-prop.PD10 { padding: 10px 0; }
+.product-info .info-prop.bb { border-bottom: #d1d1d1 solid 1px; }
+.product-info .info-prop .propName { color: #666; font-size: 14px; width: 75px; text-align: right; }
+.product-info .info-prop .newPrice { color: #f13a3a; font-size: 32px; font-weight: bold; margin-right: 8px; }
+.product-info .info-prop .oldPrice { color: #666; font-size: 14px; text-decoration: line-through; }
+.product-info .info-prop .collection { color: #666; font-size: 14px; }
+.product-info .info-prop .propNumber { font-size: 14px; position: relative; width: 78px; height: 40px; margin-top: 19px; }
+.product-info .info-prop .propNumber .input { height: 38px; line-height: 38px; width: 53px; border: #eee solid 1px; position: absolute; top: 0; left: 0; text-align: center; }
+.product-info .info-prop .propNumber .add, .product-info .info-prop .propNumber .sub { height: 15px; line-height: 15px; width: 15px; border: #eee solid 1px; position: absolute; right: 0; text-align: center; cursor: pointer; }
+.product-info .info-prop .propNumber .add { top: 0; }
+.product-info .info-prop .propNumber .sub { bottom: 0; }
+.product-info .info-btn { height: 40px; }
+.product-info .info-btn .mallBuy-btn { margin-right: 10px; }
+.product-detail-content { width: 1200px; margin: 0 auto; }
+.product-detail-content .title { height: 55px; border: #d1d1d1 solid 1px; position: relative; }
+.product-detail-content .title span { position: absolute; top: 0; left: 0; display: block; line-height: 51px; height: 51px; border-top: #f13a3a solid 4px; border-right: #d1d1d1 solid 1px; width: 158px; text-align: center; }
+.product-detail-content .content { padding: 20px; }
+.product-detail-content .content p { line-height: 28px; font-size: 14px; }
+
+/**
+* 热销产品详情
+*/
+/**
+* 数码资讯
+*/
+.news-banner { background: url("http://qianduan88.com/uploadfile/vuexImages/newsBanner.jpg") no-repeat; background-size: cover; height: 390px; min-width: 1200px; }
+.news-list { width: 1200px; margin: 0 auto; }
+.news-list li { margin-bottom: 30px; }
+.news-list li .time { width: 84px; height: 84px; background: #f2f2f2; margin-right: 20px; font-size: 16px; }
+.news-list li .time p { padding: 0 10px; padding-top: 20px; word-break: break-word; text-align: center; }
+.news-list li .info { font-size: 16px; width: 1096px; font-size: 14px; color: #808080; }
+.news-list li .info p { display: -webkit-box; word-break: break-all; text-overflow: ellipsis; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; height: 52px; line-height: 26px; margin-top: 10px; }
+.news-list li .info a { color: #808080; }
+.news-list li .info a:hover { color: #ff634d; }
+.news-detail-box { width: 1200px; margin: 0 auto; }
+.news-detail-title { height: 32px; font-size: 25px; color: #333; margin-top: 30px; color: #333; }
+.news-infoWrap { height: 60px; }
+.news-detail-content { padding: 20px 0; border-top: 1px solid #f0efef; font-size: 14px; color: #333; line-height: 25px; }
+
+/**
+* 数码资讯
+*/
+/** 注册 */
+.reg-title { height: 46px; line-height: 46px; border-bottom: 1px solid #eaeaea; width: 1200px; margin: 0 auto; }
+.reg-title span { color: #E43A3D; border-bottom: #e43a3d solid 1px; width: 86px; display: block; text-align: center; }
+.reg-list { width: 1200px; margin: 0 auto; padding-top: 20px; }
+
+/** 注册 */
+/** 购物车 */
+.cart-box { width: 1200px; margin: 0 auto; padding-top: 20px; min-height: 400px; }
+.cart-table { width: 100%; border: 1px solid #CCCCCC; border-collapse: 1px; }
+.cart-table th { background: #ddd; padding: 10px; font-size: 14px; border-bottom: 1px solid #CCCCCC; }
+.cart-table tr.tr { padding: 10px; font-size: 14px; }
+.cart-table td { padding: 15px 0; text-align: center; border-bottom: 1px solid #CCCCCC; text-align: center; font-size: 14px; }
+.cart-table td a:hover { color: #e4393c; }
+.cart-table td.text-left { text-align: left; }
+.cart-table td .check-btn { width: 22px; height: 22px; background: url(../images/fxk.png) no-repeat; background-size: cover; display: inline-block; }
+.cart-table td .check-btn.check { background: url(../images/fxk_1.png) no-repeat; background-size: cover; }
+.cart-table td .cart-table-img { width: 68px; height: 68px; border: 1px solid #f4f4f4; }
+.cart-table td .cart-table-total { color: #e05a00; }
+.cart-table td .deta-number .deta-number-click { font-size: 18px; width: 30px; height: 30px; text-align: center; cursor: pointer; border: 1px solid #ccc; }
+.cart-table td .deta-number .deta-number-input { width: 80px; text-align: center; height: 28px; line-height: 28px; border: none; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.cart-total { background: #fff; border: 1px solid #d7d7d7; border-top: none; height: 50px; }
+.cart-total-left { width: 340px; padding: 10px 25px; line-height: 30px; font-size: 14px; float: left; }
+.cart-total-left .check-btn { width: 22px; height: 22px; background: url(../images/fxk.png) no-repeat; background-size: cover; display: block; margin-top: 3px; float: left; margin-right: 6px; }
+.cart-total-left .check-btn.check { background: url(../images/fxk_1.png) no-repeat; background-size: cover; }
+.cart-total-right { position: relative; width: 439px; text-align: right; padding-top: 10px; padding-bottom: 10px; font-size: 14px; color: #f13a3a; padding-right: 160px; line-height: 30px; height: 30px; float: right; }
+.cart-total-right .allTotal { font-size: 24px; }
+.cart-total-right .allNumb { font-size: 16px; }
+.cart-total-btn { position: absolute; top: 0; right: 0; width: 140px; height: 50px; line-height: 50px; text-align: center; font-size: 20px; border: none; background: #b30000; }
+.cart-total-btn a { color: #fff; }
+.cart-total-btn a:hover { color: #666; }
+.cart-no-login { padding-top: 150px; }
+.cart-no-login .message { height: 98px; padding-left: 500px; background: url("../images/no-login-icon.png") 400px 22px no-repeat; }
+.cart-no-login .message li { line-height: 40px; color: #666; }
+.cart-no-login .message li a:hover { color: #e43a3d; }
+
+/** 购物车 */
+/** 订单 */
+.order-detail-box { width: 1200px; margin: 0 auto; }
+.order-detail-title { height: 32px; line-height: 32px; color: #666666; background: #f5f5f5; }
+.order-detail-title.MB10 { margin-bottom: 10px; }
+.order-detail-title label { width: 92px; text-align: right; font-size: 14px; font-weight: bold; }
+.order-detail-title .text { text-align: left; font-size: 14px; color: #e4393c; }
+.order-detail-pay { padding: 10px 25px; }
+.order-detail-pay p { font-size: 14px; color: #aaa; line-height: 30px; }
+.order-detail-table-title { border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1; height: 26px; line-height: 26px; padding: 3px 0; text-align: center; background: #f5f5f5; margin-bottom: 10px; font-size: 14px; }
+.order-detail-table { width: 100%; border: 1px solid #e1e1e1; border-collapse: 1px; }
+.order-detail-table th { background: #f4f4f4; padding: 6px; font-size: 14px; }
+.order-detail-table td { padding: 10px 0; text-align: center; border-top: 1px solid #f4f4f4; text-align: center; font-size: 14px; }
+.order-detail-table td.text-left { text-align: left; }
+.order-detail-table td .cart-table-img { width: 68px; height: 54px; border: 1px solid #f4f4f4; }
+.order-detail-table td .cart-table-total { color: #e05a00; }
+.order-detail-table td .deta-number .deta-number-click { font-size: 18px; width: 30px; height: 30px; text-align: center; cursor: pointer; border: 1px solid #f4f4f4; }
+.order-detail-table td .deta-number .deta-number-input { width: 80px; text-align: center; height: 28px; line-height: 28px; border: none; border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
+.order-detail-total { text-align: right; padding: 10px 0; }
+.order-detail-total p { height: 28px; line-height: 28px; font-size: 13px; }
+.order-detail-total p.p1 { color: #8e8e8e; }
+.order-detail-total p.p2 { font-weight: bold; font-size: 14px; }
+.order-detail-total p.p2 .color1 { color: #aa8e8e; }
+.order-detail-total p.p2 .color2 { color: #f13a3a; }
+.order-number { text-align: center; font-size: 13px; height: 34px; line-height: 34px; }
+.order-number span { color: #666; }
+.order-number em { color: #f13a3a; }
+.order-delivery-address { background: #f5f5f5; padding: 20px 24px; width: 1190px; padding-bottom: 5px; }
+.order-delivery-address .address-item { width: 187px; font-size: 14px; margin-right: 28px; margin-bottom: 20px; border: #f5f5f5 solid 1px; height: 117px; padding: 10px; }
+.order-delivery-address .address-item.check { border: #f13a3a solid 1px; }
+.order-delivery-address .address-title { border-bottom: dashed #ccc 1px; height: 30px; line-height: 30px; }
+.order-delivery-address .address-title .name { float: left; color: #5b5353; }
+.order-delivery-address .address-title .default { float: right; color: #f13a3a; cursor: pointer; }
+.order-delivery-address .address-title .setDefault { color: #666; float: right; cursor: pointer; }
+.order-delivery-address .address-title .setDefault:hover { color: #f13a3a; }
+.order-delivery-address .address-content { padding: 6px 0; }
+.order-delivery-address .address-content p { color: #999; }
+.order-delivery-address .address-content p.p1 { height: 30px; line-height: 30px; }
+.order-delivery-address .address-content p.p2 { line-height: 26px; }
+.order-delivery-address .address-content .phone { float: left; }
+.order-delivery-address .address-content .code { float: right; }
+.order-delivery-address .address-add-btn { font-size: 14px; width: 187px; font-size: 14px; margin-right: 28px; margin-bottom: 10px; border: #ccc solid 1px; background: #fff; height: 117px; padding: 10px; }
+.order-delivery-address .address-add-btn p { padding-top: 70px; text-align: center; color: #636363; }
+.order-addressMore { text-align: center; padding: 6px 0; margin-bottom: 10px; }
+.order-addressMore span { display: inline-block; height: 30px; line-height: 30px; color: #fff; width: 100px; background: #f13a3a; border-radius: 8px; cursor: pointer; }
+.order-success-box { padding-top: 200px; text-align: center; min-height: 200px; }
+.order-success-box p { line-height: 30px; }
+.order-success-box p .color1 { color: #e4393c; }
+
+/** 订单 */
+/** 立即购买 */
+.buy-now-title { height: 38px; line-height: 38px; font-size: 14px; font-weight: bold; }
+.buy-now-content { border-bottom: #dbdbdb dashed 1px; }
+.buy-now-address { background: #f5f5f5; padding-top: 10px; padding-bottom: 1px; margin-bottom: 10px; }
+.buy-now-total { text-align: right; padding: 10px 0; }
+.buy-now-total p { height: 28px; line-height: 28px; }
+.buy-now-total p span, .buy-now-total p em { font-size: 13px; }
+.buy-now-total p em { width: 115px; padding-right: 15px; }
+.buy-now-total p .color1 { color: #666; }
+.buy-now-total p .color2 { color: #f13a3a; }
+.buy-now-btn { text-align: right; }
+
+.address-group { height: 26px; line-height: 26px; margin-bottom: 6px; }
+.address-group label { font-size: 13px; width: 110px; text-align: right; }
+.address-group .item { font-size: 13px; }
+.address-group .item .input { font-size: 13px; height: 22px; line-height: 22px; border: #a9a9a9 solid 1px; }
+.address-group .item .input.W175 { width: 175px; }
+.address-group .item .input.W300 { width: 300px; }
+.address-group .item .input.W820 { width: 820px; }
+.address-group .item select { display: block; float: left; height: 26px; line-height: 26px; border: #a9a9a9 solid 1px; width: 177px; margin-right: 6px; }
+.address-group .item .xh { color: red; }
+
+.delivery-mode { background: #f5f5f5; padding: 6px 0; margin-bottom: 10px; }
+.delivery-mode-group { height: 30px; line-height: 30px; padding-left: 25px; }
+.delivery-mode-group .name, .delivery-mode-group .text { font-size: 13px; }
+.delivery-mode-group .name { margin-right: 15px; background: url(../images/dxk.png) no-repeat; background-size: cover; width: 18px; height: 18px; margin-top: 6px; }
+.delivery-mode-group .name.check { background: url(../images/dxk_1.png) no-repeat; background-size: cover; }
+.delivery-mode-group .cost { font-size: 13px; }
+.delivery-mode-group .cost.PDL80 { padding-left: 80px; }
+
+.shopping-list { padding: 6px 0; margin-bottom: 10px; }
+.shopping-list-table { width: 100%; }
+.shopping-list-table th { padding: 6px; font-size: 14px; }
+.shopping-list-table td { padding: 10px 0; text-align: center; text-align: center; font-size: 14px; }
+.shopping-list-table td.text-left { text-align: left; }
+.shopping-list-table td .cart-table-total { color: #e05a00; }
+
+.leaving-message { margin-bottom: 6px; }
+.leaving-message input { font-size: 13px; height: 26px; line-height: 26px; border: #a9a9a9 solid 1px; width: 100%; text-indent: 4px; }
+.leaving-message p { height: 26px; line-height: 26px; text-align: right; padding: 6px 0; padding-right: 20px; }
+
+/** 立即购买 */
+/** 购买成功------------------------------------- */
+.addSuccess-left { width: 180px; height: 180px; text-align: center; border: #d4d4d4 solid 1px; margin-right: 10px; position: relative; }
+.addSuccess-left img { width: 96%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; }
+.addSuccess-center { width: 400px; font-size: 16px; padding-top: 10px; }
+.addSuccess-right { float: right; width: 400px; font-size: 16px; padding-top: 10px; }
+.addSuccess-right .tip { line-height: 30px; margin-bottom: 60px; text-align: right; }
+.addSuccess-right .tip span { background: url(../images/success.png) no-repeat; background-size: cover; width: 30px; height: 30px; margin-right: 6px; }
+.addSuccess-right .tip em { font-size: 16px; }
+.addSuccess-right .total { text-align: right; color: #e4393c; font-size: 16px; height: 40px; line-height: 40px; }
+.addSuccess-right .btn { text-align: right; }
+.addSuccess-right .btn .addCart-btn { margin-right: 10px; }
+
+/** 购买成功------------------------------------- */
+.form-group { min-height: 30px; margin-bottom: 10px; }
+.form-label { height: 30px; line-height: 30px; text-align: right; font-size: 14px; }
+.form-label.W400 { width: 400px; }
+.form-input { height: 30px; line-height: 30px; text-align: left; font-size: 14px; border: #dadada solid 1px; background: #f7f7f7; }
+.form-input.W234 { width: 234px; }
+.form-input.W300 { width: 300px; }
+.form-textarea { height: 100px; line-height: 24px; text-align: left; font-size: 14px; border: #dadada solid 1px; background: #f7f7f7; }
+.form-textarea.W300 { width: 296px; }
+.form-btn { height: 32px; line-height: 30px; text-align: center; font-size: 14px; background: #e4393c; width: 120px; border: none; color: #fff; }
+
+.footer { margin-top: 20px; }
+.footer.bg { background: #f4f4f4; padding-top: 40px; }
+.footer .promise { height: 303px; }
+.footer .foot { border-top: #e1e1e1 solid 1px; padding-top: 54px; }
+.footer .foot .foot-info { font-size: 14px; }
+.footer .foot .foot-info .menu ul li { width: 140px; }
+.footer .foot .foot-info .menu ul li p { height: 34px; line-height: 34px; font-size: 16px; text-align: center; }
+.footer .foot .foot-info .menu ul li p a { color: #999; }
+.footer .foot .foot-info .menu ul li p a:hover { color: #e4393c; }
+.footer .foot .foot-info .phone { width: 345px; text-align: right; float: right; }
+.footer .foot .foot-info .phone h1 { height: 38px; line-height: 38px; color: #e4393c; font-size: 30px; margin-bottom: 12px; text-align: center; }
+.footer .foot .foot-info .phone h2 { height: 40px; line-height: 40px; width: 180px; border: #999 solid 1px; text-align: center; margin: 0 auto; color: #999; font-size: 14px; }
+.footer .foot .Copyright { font-size: 14px; padding-top: 25px; padding-bottom: 30px; color: #999; text-align: center; }
+
+.H10 { height: 10px; }
+
+.H20 { height: 20px; }
+
+.H40 { height: 40px; }
+
+.submit-btn { width: 144px; height: 38px; line-height: 36px; background: #f13a3a; font-size: 16px; text-align: center; border: none; color: #fff; display: inline-block; cursor: pointer; }
+
+.addCart-btn, .mallBuy-btn { display: inline-block; border: 1px solid #b30000; height: 40px; line-height: 40px; text-align: center; width: 158px; border-radius: 6px; font-size: 16px; cursor: pointer; }
+
+.addCart-btn { color: #b30000; }
+
+.mallBuy-btn { background: #b30000; color: #fff; }
+
+.carousel-wrap { position: relative; height: 600px; width: 100%; min-width: 1200px; overflow: hidden; background-color: #fff; }
+
+.slide-ul { width: 1920px; height: 100%; }
+.slide-ul li { position: absolute; width: 1920px; height: 100%; }
+.slide-ul li img { width: 100%; height: 100%; }
+
+.carousel-items { position: absolute; z-index: 10; bottom: 20px; width: 100%; margin: 0 auto; text-align: center; font-size: 0; }
+.carousel-items span { display: inline-block; height: 10px; width: 30px; margin: 0 3px; background-color: #e43a3d; cursor: pointer; }
+.carousel-items .active { background-color: #000; }
+
+.list-enter-active { transition: all 1s ease; transform: translateX(0); }
+
+.list-leave-active { transition: all 1s ease; transform: translateX(-100%); }
+
+.list-enter { transform: translateX(100%); }
+
+.list-leave { transform: translateX(0); }
+
+/*# sourceMappingURL=style.css.map */

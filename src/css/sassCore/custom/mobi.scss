@@ -1,0 +1,36 @@
+
+
+.hide {
+  display: none;
+}
+
+
+%icon-block {
+  @extend %inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+@mixin icon ($url:'icon.png',$width:.5rem, $height:$width) {
+  @extend %icon-block;
+  width: $width; 
+  height: $height;
+  background-image: url('../images/'+ $url);
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+
+  @at-root #{&}-row {
+    display: table-row;
+  }
+
+  @at-root #{&}-cell {
+    display: table-cell;
+  }
+}
