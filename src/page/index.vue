@@ -1,10 +1,12 @@
 <template>
 	<div>
+		<!-- <span class="icon iconfont icon-lock"></span>
+		<el-button type="primary">确 定</el-button> -->
 		<index-banner></index-banner>
 		<div class="danfan-box">
 			<div class="container">
 				<ul>
-					<li v-for="(item,index) in goodsTypeList">
+					<li v-for="(item,index) in goodsTypeList" :key="index">
 						<img v-bind:src="item.typeImageUrl" />
 						<div class="shad">
 							<router-link :to="{name:'Product',params:{typeId:item.id}}">
@@ -26,17 +28,12 @@
 		<div class="product-list">
 			<div class="container">
 				<ul>
-					<li v-for="(item,index) in hotGoodsList">
+					<li v-for="(item,index) in hotGoodsList" :key="index">
 						<div class="img" v-bind:id="item.goods_id">
 							<router-link :to="{name:'productDetail',params:{detailId:item.goods_id}}" class="pic">
 								<img v-bind:src="item.original_img" />
 							</router-link>
 						</div>
-						<!--<p class="text">
-							 <router-link :to="{name:'productDetail',params:{detailId:item.goods_id}}">
-								{{item.goods_name}}
-							</router-link>
-						</p>-->
 						<p class="btn">
 							<span class="market_price">{{item.market_price | pruductPrice}}</span>
 							<span class="sales_sum">{{item.sales_sum}}人付款</span>
@@ -51,7 +48,6 @@
 			</div>
 		</div>
 		<n-footer></n-footer>
-
 	</div>
 </template>
 <script>
